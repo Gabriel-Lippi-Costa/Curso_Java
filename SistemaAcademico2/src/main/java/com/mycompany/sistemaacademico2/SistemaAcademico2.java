@@ -1,5 +1,3 @@
-
-
 package com.mycompany.sistemaacademico2;
 
 import javax.swing.JOptionPane;
@@ -15,6 +13,17 @@ public class SistemaAcademico2 {
             
             switch(op) {
                 case 1:
+                    String nome = JOptionPane.showInputDialog("Digite o nome:");
+                    String fone = JOptionPane.showInputDialog("Digite o fone: ");
+                    String email = JOptionPane.showInputDialog("Digite o email: ");
+                    
+                    var pessoa = new Pessoa(nome, fone, email);
+                    var dao = new PessoaDAO();
+                    
+                    pessoa.setNome(nome);
+                    pessoa.setFone(fone);
+                    pessoa.setEmail(email);
+                    dao.cadastrar(pessoa);
                     break;
                 case 2:
                     break;
