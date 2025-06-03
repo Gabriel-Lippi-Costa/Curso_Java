@@ -1,4 +1,3 @@
-
 package com.mycompany.sistemaacademico2;
 
 import java.sql.Connection;
