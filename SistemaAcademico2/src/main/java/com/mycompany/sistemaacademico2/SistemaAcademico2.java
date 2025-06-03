@@ -26,6 +26,8 @@ public class SistemaAcademico2 {
                     dao.cadastrar(pessoa);
                     break;
                 case 2:
+                    
+                    
                     break;
                 case 3:
                     break;
