@@ -106,6 +106,9 @@ public class LoginTela extends javax.swing.JFrame {
       
       if (dao.existeUsuario(usuario)) {
         JOptionPane.showMessageDialog(null, "Bem vindo " + usuario.getNome() + "!");
+        CursosAlunosTela ct = new CursosAlunosTela();
+        ct.setVisible(true);
+        this.dispose();
       }else {
         JOptionPane.showMessageDialog(null, "Usuário/senha inválido(s)");
       }      
